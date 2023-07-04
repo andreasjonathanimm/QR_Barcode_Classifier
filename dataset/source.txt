@@ -1,0 +1,46 @@
+Barcode Source:
+Neural Image Restoration For Decoding 1-D Barcodes Using Common Camera Phones
+Alessandro Zamberletti, Ignazio Gallo, Moreno Carullo and Elisabetta Binaghi
+Computer Vision, Imaging and Computer Graphics. Theory and Applications, Springer Berlin Heidelberg, 2011
+
+Two datasets useful to evaluate the performances of systems for decoding 1D barcode (EAN-13)
+Dataset1 contains pictures of barcodes taken from devices with the autofocus (AF) function.
+Dataset2 contains pictures taken by devices without AF.
+
+License Creative Commons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0/)
+
+QR Code Source:
+QR Code - v1 2021-11-30 2:52pm
+==============================
+
+This dataset was exported via roboflow.ai on March 10, 2022 at 1:59 PM GMT
+
+It includes 562 images.
+Qrcode are annotated in Tensorflow Object Detection format.
+
+The following pre-processing was applied to each image:
+* Auto-orientation of pixel data (with EXIF-orientation stripping)
+* Resize to 416x416 (Stretch)
+
+No image augmentation techniques were applied.
+
+# undefined > 2021-11-30 2:52pm
+https://public.roboflow.ai/object-detection/undefined
+
+Provided by undefined
+License: CC BY 4.0
+
+# Overview
+ 
+This dataset contains images taken of QR Codes in variable lighting conditions at different angles.
+
+## Trained Model with Roboflow Train
+### High Performance
+* 99.5% mAP
+* 100.0% precision
+* 99.2% recall
+
+### Testing The Model
+You can [test this trained model](https://universe.roboflow.com/lihang-xu/qr-code-oerhe/1/try/) by dropping an image on this page or via curl command
+
+```base64 YOUR_IMAGE.jpg | curl -d @- "https://detect.roboflow.com/qr-code-oerhe/1?api_key=YOUR_API_KEY"```
