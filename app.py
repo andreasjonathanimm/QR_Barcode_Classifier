@@ -16,14 +16,14 @@ IMAGE_WIDTH = 256
 IMAGE_HEIGHT = 256
 
 MODEL_PATH = 'models/'
-MODEL_NAME = 'model3'
+MODEL_NAME = 'model'
 
 CLASSSES = ['Barcode', 'Else', 'QR']
 NUM_CLASSES = len(CLASSSES)
 
 # Load model
 try:
-    MODEL = tf.keras.models.load_model(MODEL_PATH + '/' + MODEL_NAME + '.h5')
+    MODEL = tf.saved_model.load(MODEL_PATH + '/' + MODEL_NAME)
 except OSError:
     st.error('Model not found. Please train a model first.')
     sys.exit()

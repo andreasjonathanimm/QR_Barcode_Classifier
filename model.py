@@ -170,7 +170,7 @@ def make_model():
         print("Path: " + MODEL_PATH + '/' + MODEL_NAME + '/results.txt')
 
     # Save model
-    model.save(MODEL_PATH + '/' + MODEL_NAME + '.h5')
+    model.save(MODEL_PATH + '/' + MODEL_NAME) # savedmodel
 
 def load_model(model_path):
     """Loads model from file
